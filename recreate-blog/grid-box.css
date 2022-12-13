@@ -1,0 +1,163 @@
+
+.container {
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 250px minmax(200px, 1fr);
+  grid-column-gap: 1em;
+  grid-template-areas: 
+    "sidenav header header"
+    "sidenav hero hero"
+    "sidenav content-left content-right";
+}
+
+.header {
+  grid-area: header;
+}
+
+sidenav {
+  grid-area:  sidenav;
+}
+
+hero {
+  grid-area: hero;
+}
+
+content-left {
+  grid-area: content-left;
+}
+
+content-right {
+  grid-area: content-right;
+}
+
+
+
+/*NOTES BELOW*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px minmax(200px, 1fr) 100px 100px;
+  grid-gap: 10px;
+}
+
+header {
+  grid-column: 1 / -1;
+}
+
+main {
+  grid-row: 2 / 3;
+}
+
+aside {
+  grid-row: 2 / -1;
+}
+
+footer {
+  grid-row: -3 / -1; 
+}*/
+
+
+/* 
+pixels can be percentages
+grid-column-gap:  for only columns;
+grid-row-gap:  for only rows;
+grid-gap:  shorthand for both, rows first, then columns, or just one value for both
+Use fr units for portions of page 
+Use repeat function, syntax is repeat(#, unit) - so repeat(3, 1fr) will repeat 1fr three times.
+minmax( , ): sets the minimum and maximum, fr units can only be used for max, repeat() function can be used
+	example:  grid-template-columns:  repeat(3, minmax(200px, 1fr)); 
+auto-fill and auto-fit can be used instead of number of times to repeat
+	example:  grid-template-columns:  repeat(auto-fill, minmax(60px, 1fr));
+		---this will repeat the minimum-60px column as many times as allowed by container size (max-width of .grid)
+			---If you have less items than available space, empty columns will populate
+	example:  grid-template-columns:  repeat(auto-fit, minmax(60px, 1fr));
+		---this will repeat the minimum-60px columns to fit the container based on the number of items
+			---This will not populate empty columns but take up equal parts (becasue of the fr) of the container;
+grid-auto-columns: 1fr;
+	---This will set the implicit grid column width to 1fr (any items that are not defined in grid-template-columns explicit rule)
+grid-auto-rows:  minmax(150px, auto);
+	---This will make the implicit rows no less than 150px height, but can grow to accommodate more content if needed
+grid-auto-flow:  column; 
+	---This will set any implicit items as columns (row is default) and also changes display order (top-down first)
+
+
+Grid Item Placement:  
+grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end:  #;
+---# will be which line to start or end on of the rows or columns
+
+grid-column:  # / #;
+---shorthand, must use a forward slash, first number is start, second end
+grid-row:  # / #;
+---same shorthand for rows;
+
+
+
+*/
+

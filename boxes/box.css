@@ -1,0 +1,52 @@
+div {}
+
+#header {
+	background-color: red;
+	width:  80%;
+	height:  20em;
+	margin: 1em;
+}
+
+#sidenav {
+    display: inline-block;
+    width: 20%;
+    height: 51.2em;
+    background-color: blue;
+    margin: 0 1em 1em 1em;
+}
+
+#content {
+    display: inline-block;
+    background-color: white;
+    width: 60%;
+    height: 50em;
+    vertical-align: top;
+}
+	#content-hero {
+	    display: inline-block;
+	    background-color: grey;
+	    border: 1em solid purple;
+	    width: 98.6%;
+	    height: 10em;
+	    margin: 0 1em 1em 0;
+}
+
+	#content-left {
+	    display: inline-block;
+	    background-color: green;
+	    text-align: left;
+	    width: 49.5%;
+	    height: 38em;
+	    vertical-align: top;
+	    margin: 0 1em 1em 0;
+}
+
+	#content-right {
+	    display: inline-block;
+	    background-color: orange;
+	    text-align: right;
+	    width: 49.5%;
+	    height: 38em;
+	    vertical-align: top;
+	    margin: 0 1em 1em 0;
+}
