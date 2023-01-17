@@ -1,0 +1,127 @@
+body {
+  display: block;
+  box-sizing: border-box;
+  background-color: #ffc72b;
+  font-family: 'Lato', sans-serif;
+}
+
+.logo {
+  margin-left: 28px;
+  margin-top: -100px;
+}
+
+#sideNav {
+  height: 100%;
+  width: 278px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 14px 45px 14px 0px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16.9px;
+  overflow-wrap: break-word;
+  position: relative;
+  text-align: left;
+  text-decoration-color: rgb(68, 68, 68);
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  width: 183px;
+  display: block;
+}
+
+#contact {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 20px;
+  margin-left: 28px;
+  vertical-align: baseline;
+  
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+main {
+  margin-left: 270px;
+  margin-right: -8px;
+}
+
+.mainHeaderPic {
+  position: relative;
+  top: 0;
+  margin-top: -8px;
+  max-height: 400px;
+  width: 100%;
+  padding: 0;
+}
+
+#mainHeader {
+  position: relative;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 28px;
+  text-color: #000000;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 8vw;
+  text-transform: uppercase;
+}
+
+.headerBorder {
+  position: relative;
+  display: block;
+  margin-top: 5px;
+  margin-left: 8vw;
+  border-top: 3px solid #ffe68f;
+  height: 18px;
+  width: 85%;
+  z-index: 10;
+}
+
+#mainContent {
+  position: relative;
+  display: inline-block;
+  background-color: #ffc72b;
+  height: 100%;
+  width: 770px;
+  padding-left: 8vw;
+  margin-top: 0px;
+  z-index: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-color: #222;
+  text-align: left;
+}
+
+.contentBadge {
+  float: right;
+  margin-right: 175px;
+  display: inline-block;
+  height: 15%;
+  width: 15%;
+}
